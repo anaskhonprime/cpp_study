@@ -1,0 +1,42 @@
+
+
+** #include <iostream> 이란?
+
+ - iostream 헤더 파일을 포함해 전처리기 (preprocessor)이다. 
+   iostream에서 입출력에 필요한 클레스들 정의되 있어 cin, cout 입출력을 위하여 있어야한다.
+
+ - endl 은 '\n'과 같다.
+
+ - return 0 은 메인 함수를 실행하고 작업이 끝난 후 외부로 0값을 반환한다.
+
+ - cin, cout 대신 printf(), scanf() 을 사용할 수 있으면 #include <stdio.h> 있어야 한다.
+
+
+** int main(void) 에서 메인 함수의 타입이고 void 없으면 return 값이 없다는 뜻입니다.
+
+   - cout.setf(cout.boolalpha) => bool 값을 1과 0 대신에 true,false으로 출력
+
+   - ( 3>=2 ) + 5 질문의 답은? 먼저 3<=2은 true이고 1 나오고, 1+5 더해서 결과는 6이다.
+
+   - cout << 6/5 << endl;  // 1
+     cout << 6.0/5 << endl; // 1.2
+     cout << (int) 6/ (int) 5 << endl;  // 1
+     cout << 3 / 5 * 12.0 << endl;  // 0 
+
+
+
+** x++ 과 ++x 의 차이첨
+
+  - 즉, x++와 ++x의 주요한 차이점은 x가 증가되는 순서입니다.
+    x가 증가되기 전에 값을 사용해야 한다면 x++를 사용하고, 
+    증가된 x의 값을 사용해야 한다면 ++x를 사용하면 됩니다
+
+  - x++는 후위 증가 연산자로, 현재 식이 평가된 후에 x의 값을 1 증가시킵니다.
+   
+    int x = 5;
+    int y = x++;  // y = 5, x = 6 
+
+  - 반면 ++x는 전위 증가 연산자로, 현재 식이 평가되기 전에 x의 값을 1 증가시킵니다.
+
+    int x = 5;
+    int y = ++x;  // y = 6, x = 6
